@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.minh.cropimageviewfull.CropActivity">
+
+    <FrameLayout
+        android:id="@+id/top_frame"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <com.theartofdev.edmodo.cropper.CropImageView
+            android:id="@+id/crop_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.theartofdev.edmodo.cropper.CropImageView>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotate" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Next Step" />
+    </LinearLayout>
+</LinearLayout>

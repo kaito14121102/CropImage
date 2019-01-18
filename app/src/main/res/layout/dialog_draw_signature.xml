@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="DRAW SIGNATURE"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:padding="0.1dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_canvas">
+
+        <ImageView
+            android:id="@+id/image_draw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:text="CANCEL"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:text="ADD"
+            android:textColor="#ff7300"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:text="CLEAR"
+            android:textColor="#ff7300"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COLOR"
+            android:textColor="#ff7300"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
